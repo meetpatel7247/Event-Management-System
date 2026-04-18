@@ -95,32 +95,3 @@
     display: flex;
     flex-direction: column;
 }
-
-@media (max-width: 768px) {
-    .header {
-        align-items: center;
-    }
-
-    .title {
-        font-size: 1.4rem;
-        white-space: normal;
-    }
-
-    .item {
-        flex: 0 0 80%;
-        min-width: 220px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .item {
-        flex: 0 0 100%;
-        min-width: 100%;
-    }
-}

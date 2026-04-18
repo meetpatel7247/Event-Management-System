@@ -166,22 +166,3 @@
     color: rgba(255, 255, 255, 0.3);
     font-family: monospace;
 }
-
-@media (max-width: 768px) {
-    .urgentCard,
-    .bookingCard {
-        min-width: 220px;
-    }
-}
-
-@media (max-width: 480px) {
-    .urgentCard,
-    .bookingCard {
-        min-width: 100%;
-        max-width: 100%;
-    }
-
-    .cardContent {
-        padding: 1rem;
-    }
-}
