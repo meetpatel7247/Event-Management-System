@@ -77,3 +77,20 @@
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 480px) {
+    .topRow {
+        padding: 0.6rem 0.75rem;
+        gap: 0.5rem;
+    }
+
+    .actions {
+        margin-left: auto;
+        gap: 0.35rem;
+    }
+
+    .hamburgerBtn {
+        font-size: 1.35rem;
+        padding: 0.35rem;
+    }
+}

@@ -129,3 +129,36 @@
     background-clip: text;
     text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        right: 12px;
+        width: min(320px, calc(100vw - 24px));
+        max-height: calc(100vh - 84px);
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        right: 8px;
+        top: 64px;
+        width: calc(100vw - 16px);
+        border-radius: 12px;
+        padding: 1rem;
+    }
+
+    .sidebarHeader {
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .sidebarContent {
+        gap: 1rem;
+    }
+
+    .sidebarLink {
+        font-size: 1rem;
+        padding: 0.4rem 0;
+    }
+}

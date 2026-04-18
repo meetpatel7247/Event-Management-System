@@ -93,3 +93,46 @@
     color: var(--text-muted);
     font-size: 0.8rem;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 1.25rem 1.5rem;
+    }
+
+    .container {
+        gap: 2rem;
+    }
+
+    .brandColumn {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 2.5rem 1rem 1.25rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .linksColumn {
+        flex: 1 1 100%;
+    }
+
+    .brandName {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        margin-bottom: 1rem;
+    }
+
+    .bottomBar {
+        margin-top: 2rem;
+        padding-top: 1.25rem;
+        font-size: 0.75rem;
+    }
+}
