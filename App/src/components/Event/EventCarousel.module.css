@@ -90,7 +90,7 @@
 .item {
     flex: 0 0 calc(25% - 1.5rem);
     /* Fits 4 items per row with 2rem gap */
-    min-width: 250px;
+    min-width: min(100%, 250px);
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
