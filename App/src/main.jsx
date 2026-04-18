@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
     {/* Redux Provider for global state management */}
     <Provider store={store}>
       {/* BrowserRouter for handling client-side routing */}
-      <BrowserRouter basename="/Event-Management-System">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </Provider>
