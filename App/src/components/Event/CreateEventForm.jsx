@@ -15,6 +15,7 @@ const CreateEventForm = ({ onSubmit, onCancel, initialData }) => {
     const [formData, setFormData] = useState({
         title: '',
         date: '',
+        time: '',
         location: '',
         price: '',
         category: 'Concert',
@@ -27,6 +28,7 @@ const CreateEventForm = ({ onSubmit, onCancel, initialData }) => {
             setFormData({
                 title: initialData.title || '',
                 date: initialData.date ? new Date(initialData.date).toISOString().split('T')[0] : '',
+                time: initialData.time || '',
                 location: initialData.location || '',
                 price: initialData.price || '',
                 category: initialData.category || 'Concert',
@@ -59,9 +61,10 @@ const CreateEventForm = ({ onSubmit, onCancel, initialData }) => {
                 {initialData ? 'Edit Event' : 'Create New Event'}
             </h3>
             <form onSubmit={handleSubmit}>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
                     <input className="premium-input" name="title" value={formData.title} placeholder="Event Title" onChange={handleChange} required />
                     <input className="premium-input" name="date" type="date" value={formData.date} onChange={handleChange} required />
+                    <input className="premium-input" name="time" type="time" value={formData.time} onChange={handleChange} required />
                 </div>
                 <div style={{ padding: '1rem 0', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <input className="premium-input" name="location" value={formData.location} placeholder="Location" onChange={handleChange} required />
